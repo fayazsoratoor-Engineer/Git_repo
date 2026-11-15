@@ -42,3 +42,16 @@ for i in range(len(arr) - 1):
 arr[-1] = first
 
 print(arr)
+arr = [1, 2, 3, 4, 5]
+large = arr[0]
+second = arr[0]
+
+for i in range(len(arr)):
+    if arr[i] > large:
+        second = large
+        large = arr[i]
+    elif arr[i] > second and arr[i] != large:
+        second = arr[i]
+
+print("Largest:", large)
+print("Second Largest:", second)
