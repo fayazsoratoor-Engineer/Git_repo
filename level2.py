@@ -11,10 +11,34 @@ for i in arr:
         unique_arr.append(i)
 print(unique_arr)
 
+
+#zero to hh end of the array
 arr=[2,1,0,2,0,1,3,0,4,5,0,1,1,2]
 counts=arr.count(0)
 for i in arr:
     if i == 0:
         arr.remove(0)
 arr += [0] * counts
+print(arr)
+
+arr=[2,1,0,2,0,1,3,0,4,5,0,1,1,2]
+counts=arr.count(0)
+for i in arr:
+    if i == 0:
+        arr.remove(0)
+zero=[0] * counts
+zero+=arr
+print(zero)
+
+
+#left rotate the array by k times
+arr = [1, 2, 3, 4, 5]
+
+first = arr[0]
+
+for i in range(len(arr) - 1):
+    arr[i] = arr[i + 1]
+
+arr[-1] = first
+
 print(arr)
