@@ -95,3 +95,6 @@ print(sorted(arr1 + arr2, key=lambda x: x))
 print("Hello World")
 print("Hello World")
 print("Hello World")
+
+def add(a, b):
+    return a + b
