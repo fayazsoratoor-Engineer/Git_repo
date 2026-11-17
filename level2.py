@@ -83,3 +83,7 @@ while i < len(arr1) and j < len(arr2):
         merged.append(arr2[j])
         j += 1
 print(merged + arr1[i:] + arr2[j:])
+
+arr1 = [1, 3, 5, 7]
+arr2 = [2, 4, 6, 8]
+print(sorted(arr1 + arr2))
