@@ -91,3 +91,5 @@ print(sorted(arr1 + arr2))
 arr1 = [1, 3, 5, 7]
 arr2 = [2, 4, 6, 8]
 print(sorted(arr1 + arr2, key=lambda x: x))
+
+print("Hello World")
