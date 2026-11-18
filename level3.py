@@ -33,3 +33,7 @@ def merge_sorted_arrays(arr1, arr2):
             merged.append(arr2[j])
             j += 1
     return merged + arr1[i:] + arr2[j:]
+
+
+def merge_sorted_arrays_sorted(arr1, arr2):
+    return sorted(arr1 + arr2)
