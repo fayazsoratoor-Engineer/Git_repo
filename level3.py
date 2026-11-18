@@ -40,3 +40,6 @@ def merge_sorted_arrays_sorted(arr1, arr2):
 
 def merge_sorted_arrays_sorted_with_key(arr1, arr2):
     return sorted(arr1 + arr2, key=lambda x: x)
+
+def print_hello_world():
+    print("Hello World")
