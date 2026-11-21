@@ -75,3 +75,16 @@ def point(arr):
         elif arr[right]==0:
             right-=1
     return arr
+
+def each_pair(arr,k):
+    left=0
+    right=len(arr)-1
+    while left<right:
+        current_sum=arr[left]+arr[right]
+        if current_sum==k:
+            return arr[left],arr[right]
+        elif current_sum<k:
+            left+=1
+        else:
+            right-=1
+    return False
