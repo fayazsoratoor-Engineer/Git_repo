@@ -38,3 +38,10 @@ def move_zero(arr):
             right-=1
     return arr
 print(move_zero([0,1,0,3,12]))
+
+print("Fayaz")
+for i in range(10):
+    print(i)
+    if i==10:
+        continue
+    
