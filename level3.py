@@ -43,3 +43,4 @@ def merge_sorted_arrays_sorted_with_key(arr1, arr2):
 
 def print_hello_world():
     print("Hello World")
+    print("Fayaz")
