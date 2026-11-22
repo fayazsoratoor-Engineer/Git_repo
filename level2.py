@@ -107,3 +107,14 @@ def largest(arr):
             large = i
     return large
 print("Fayaz")
+
+def second_largest(arr):
+    large = arr[0]
+    second = arr[0]
+    for i in arr:
+        if i > large:
+            second = large
+            large = i
+        elif i > second and i != large:
+            second = i
+    return second
