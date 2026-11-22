@@ -130,3 +130,8 @@ def merge_sorted_arrays(arr1, arr2):
             merged.append(arr2[j])
             j += 1
     return merged + arr1[i:] + arr2[j:]
+
+def left_rotate(arr, k):
+    n = len(arr)
+    k = k % n  # Handle cases where k is greater than the length of the array
+    return arr[k:] + arr[:k]
