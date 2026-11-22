@@ -135,3 +135,10 @@ def left_rotate(arr, k):
     n = len(arr)
     k = k % n  # Handle cases where k is greater than the length of the array
     return arr[k:] + arr[:k]
+
+def remove_duplicates(arr):
+    unique_arr = []
+    for i in arr:
+        if i not in unique_arr:
+            unique_arr.append(i)
+    return unique_arr
