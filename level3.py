@@ -81,3 +81,6 @@ def merge_sorted_arrays(arr1, arr2):
             merged.append(arr2[j])
             j += 1
     return merged + arr1[i:] + arr2[j:]
+
+def palindrome_check(s):
+    return s == s[::-1]
