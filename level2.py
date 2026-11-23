@@ -142,3 +142,4 @@ def remove_duplicates(arr):
         if i not in unique_arr:
             unique_arr.append(i)
     return unique_arr
+    

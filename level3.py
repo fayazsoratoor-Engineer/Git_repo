@@ -44,3 +44,28 @@ def merge_sorted_arrays_sorted_with_key(arr1, arr2):
 def print_hello_world():
     print("Hello World")
     print("Fayaz")
+
+def print_hello_world_multiple_times(n):
+    for _ in range(n):
+        print("Hello World")
+
+def add_numbers(a, b):
+    return a + b
+
+def find_largest(arr):
+    large = arr[0]
+    for i in arr:
+        if i > large:
+            large = i
+    return large
+
+def find_second_largest(arr):
+    large = arr[0]
+    second = arr[0]
+    for i in arr:
+        if i > large:
+            second = large
+            large = i
+        elif i > second and i != large:
+            second = i
+    return second
