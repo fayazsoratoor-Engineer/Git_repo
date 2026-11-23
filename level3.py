@@ -104,3 +104,11 @@ def fibonacci(n):
             next_fib = fib_seq[i - 1] + fib_seq[i - 2]
             fib_seq.append(next_fib)
         return fib_seq
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
