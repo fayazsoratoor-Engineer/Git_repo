@@ -84,3 +84,9 @@ def merge_sorted_arrays(arr1, arr2):
 
 def palindrome_check(s):
     return s == s[::-1]
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
